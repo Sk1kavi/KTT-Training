@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            .main{
+                display:flex;
+            }
+            .origin{
+                background-image: conic-gradient(red,yellow,green);
+                width:100px;
+                height:100px;
+                box-sizing:content-box;
+                padding:10;
+                margin:10;
+            }
+            .border{
+                background-image: repeating-conic-gradient(red,yellow,green);
+                width:100px;
+                height:100px;
+                overflow:auto;
+                box-sizing:border-box;
+                padding:10;
+                margin:10;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <div class="origin">
+            <h1> content box</h1>
+
+        </div>
+        <div class="border">
+            <h1> border box </h1>
+
+        </div>
+        <p>the content box and border box demonstrate the difference in how padding and content are calculated with different box-sizing values.</p>
+        <p>the content box includes the padding and content, while the border box includes the padding, content, and border.</p>
+        </div>
+    </body>
+</html>
