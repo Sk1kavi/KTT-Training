@@ -1,0 +1,39 @@
+<!-- multiple background images
+ background attachment
+ background image above the background color -->
+
+ <html>
+    <head>
+        <style>
+            .color-image{
+                width:500px;
+                height:500px;
+                background-image: conic-gradient( rgb(255 0 0 / 0.5),rgb(243 235 134 / 0.5),rgb(255 255 255 / 0.2)) , url("https://mdn.github.io/shared-assets/images/examples/big-star.png");
+                background-color: rgb(103, 211, 219);
+                padding: 50;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .multiple{
+                width:500px;
+                height:500px;
+                background-repeat: no-repeat;
+                background-color: rgb(243 235 134 / 0.5);
+                background-image: url("https://mdn.github.io/shared-assets/images/examples/star.png"), url("https://mdn.github.io/shared-assets/images/examples/big-star.png");
+            }
+            body{
+                background-image: repeating-conic-gradient(pink 10%,yellow 10%,aqua 20%,green 30%,red 40%,blue 50%);
+                background-attachment: fixed;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="color-image">
+
+        </div>
+        <div class="multiple">
+
+        </div>
+    </body>
+ </html>
