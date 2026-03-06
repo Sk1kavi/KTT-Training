@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .combine{
+            display:flow-root;
+            background-color: aquamarine;
+            position:fixed;
+            top:0;
+            opacity:0.9;
+        }
+        .combine +p{
+            margin-top:130px;
+            background-image: repeating-radial-gradient(rgb(210 105 30 / 0.7) 10%,rgb(165 42 42 / 0.7) 20%,rgb(128 0 128 / 0.7) 20%);
+        }
+        .box{
+            background-color:violet;
+            width:100px;
+            height:100px;
+            text-align:center;
+            float:left;
+            margin: 10px;
+        }
+        .first{
+            background-color: aqua;
+        }
+        .sticky{
+            position: sticky;
+            top:10px;
+            opacity: 0.7;
+            background-image: linear-gradient(pink,green);
+            height:100px;
+        }
+    </style>
+    
+</head>
+<body>
+<div class="combine">
+    <div class="box">Float</div>
+
+<p class="first">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam
+  dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus
+  ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus
+  laoreet sit amet.
+</p>
+</div>
+<p>
+    Sree Apparels is a garment stitching unit that works exclusively for Ramraj, a leading
+garment company. The primary workflow of Sree Apparels involves receiving trunk pieces,
+stitching them, and dispatching the completed trunks back to Ramraj. While this process is
+straightforward in principle, the current method of managing daily operations is entirely
+manual and depends on handwritten registers. This manual system introduces significant
+limitations and challenges.
+Staff management is cumbersome as details such as staff names, roles, attendance, and
+salary allocation are maintained in notebooks, making retrieval of information slow and
+prone to inconsistencies. Identifying staff with similar names and verifying their payment
+history becomes difficult without a proper digital system. Attendance tracking also suffers
+from inaccuracies, as marking attendance across multiple shifts (morning, afternoon,
+evening) requires constant manual effort. There is no systematic way to prevent duplication
+or modification of records, and the lack of a structured process for shift-based attendance
+affects transparency and reliability in salary calculation.
+Stitching records are poorly managed since the number of pieces stitched by each tailor
+is not recorded in real time. As a result, management cannot accurately assess individual
+performance or verify production levels when calculating salaries. This creates scope for
+disputes and errors in determining pay based on output. Piece tracking is also handled
+manually through registers. The arrival of raw trunk pieces, their stitching progress, and the
+dispatch of finished trunks are recorded by hand. Tracking multiple bundles over time
+becomes complex, and there is no way to color-code or visually distinguish between
+2
+<div class="sticky"></div>
+dispatched, pending, or partially paid bundles. This lack of clarity often leads to delays and
+confusion in operation.
+Salary calculation is one of the most critical challenges in the existing system. Tailors
+are paid based on the number of pieces stitched, while helpers receive salaries based on their
+shifts worked. Calculating these salaries manually not only consumes a great deal of time
+but also increases the risk of errors. Inaccurate salary computation can lead to dissatisfaction
+among staff and affect overall productivity.
+The absence of a centralized digital system means that historical data is difficult to
+retrieve, analysis of staff performance is nearly impossible, and financial records are
+scattered across registers. As Sree Apparels grows in staff size and workload, these problems
+will multiply, making it harder to maintain efficiency and fairness in operations. Therefore,
+there is a pressing need for a software-based solution that can manage staff details, track
+attendance across shifts, monitor stitching and piece movement, and automate salary
+calculations. Such a system will eliminate manual inefficiencies, reduce errors, and provide
+a transparent and scalable approach to handling the daily operations of Sree Apparels.
+1.2 OBJECTIVE OF THE PROJECT
+The main objective of this project is to develop a comprehensive Employee
+Management and Salary Processing System for Sree Apparels that replaces the existing
+manual register-based system with an efficient, accurate, and user-friendly digital solution.
+The project aims to ensure smooth handling of staff information, attendance tracking,
+stitching records, piece and trunk movement, salary processing, and analytical reporting.
+The specific objectives of the project are:
+ To automate staff and work management by maintaining all staff records, attendance
+data (including shift-based attendance), stitching counts, and salary details in a
+centralized database.
+3
+ To implement a secure role-based login system that provides different access levels
+for Admin and Staff, ensuring data privacy and controlled operations.
+ To improve accuracy and transparency in salary calculation by directly linking
+attendance, stitching, and trunk records to the payment process.
+ To introduce analytical and reporting features that allow management to view
+monthly and yearly summaries, staff performance, and salary trends through visual
+dashboards and downloadable reports.
+ To save time and effort by eliminating dependence on handwritten registers and
+manual computations.
+ To enable better decision-making by ensuring that historical and real-time data can
+be easily retrieved, updated, and analyzed whenever required.
+ To enhance staff satisfaction and trust by ensuring error-free salary payments, proper
+record maintenance, and transparent operations.
+ To provide scalability for future enhancements such as income and expense tracking,
+mobile app integration, and automated payment gateway connectivity.
+ By fulfilling these objectives, the system streamlines the daily operations of Sree
+Apparels, enhances productivity, and supports data-driven staff management while
+laying a strong foundation for ongoing digital transformation.
+4
+CHAPTER 2
+SYSTEM ANALYSIS
+2.1 EXISTING SYSTEM
+At present, the operations at Sree Apparels are managed entirely through manual
+registers and handwritten entries. Staff details, attendance records, stitching counts, salary
+allocations, and the inflow and outflow of garment pieces are all maintained in notebooks.
+The company has around 25 staff members, including tailors and helpers, and their daily
+activities are recorded by supervisors using pen and paper.
+Attendance is noted shift-wise, but there is no structured mechanism to prevent
+duplication or ensure accuracy across Morning, Afternoon, and Evening shifts. Similarly,
+details about the arrival of trunk pieces from Ramraj, their stitching status, and dispatch are
+written manually, making it difficult to track bundle progress over time. Salary calculation
+is also performed manually at the end of each month, where tailors are paid based on the
+number of pieces stitched and helpers are paid based on shifts worked.
+Since all operations rely on registers, retrieving past data or verifying staff
+performance requires going through several books, which is time-consuming and inefficient.
+The absence of a centralized record system also makes it difficult to ensure data consistency
+and accountability. As the scale of work and the number of employees increases, the manual
+system becomes harder to manage effectively.
+2.1.1 DISADVANTAGES OF EXISTING SYSTEM
+ Recording attendance, stitching details, and salaries manually takes considerable
+time.
+5
+ Retrieving past records involves searching through multiple registers.
+ Human errors in attendance or stitching records directly affect salary accuracy.
+ Staff members cannot easily verify how their salary was calculated.
+ Management has no clear view of staff performance or bundle status in real time.
+ No systematic way to know which trunk pieces have been received, stitched,
+dispatched, or paid for.
+ High risk of misplacing information when multiple bundles are in progress.
+ Past records cannot be analyzed easily for staff performance, monthly trends, or
+financial tracking.
+ Reports cannot be generated without manual effort.
+ As staff size and workload increase, managing everything with registers becomes
+nearly impossible.
+ Expansion of operations would require more manpower just to maintain records.
+2.2 PROPOSED SYSTEM
+The proposed system is an Employee Management and Salary Processing System for
+Sree Apparels, developed using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+The system is designed to automate the existing manual processes and provide a centralized,
+secure, and data-driven digital platform for managing staff, attendance, stitching, piece
+tracking, salary processing, and performance analysis.
+6
+In the proposed system, staff details are stored in a centralized database along with
+their roles, contact details, and identification images. A role-based login system is
+implemented, allowing secure access for different user types — Admin and Staff. Admins
+can manage staff records, monitor performance, generate reports, and process salaries, while
+Staff can view their own attendance and salary details.
+Attendance management is digitalized and supports multiple shifts (Morning,
+Afternoon, and Evening), ensuring that duplicate entries are prevented. Tailors’ stitching
+records are automatically linked with attendance to calculate pay based on the number of
+pieces stitched. Similarly, helpers’ salaries are computed according to the number of shifts
+they attend.
+Piece and trunk tracking are also digitized. Each bundle is recorded with attributes
+such as bundle number, item type, quantity, payment status, and dispatch status. Color-coded
+indicators provide a quick visual reference to identify dispatched, pending, or partially paid
+bundles.
+Salary processing is simplified through an integrated calculation system where
+administrators can define per-piece and per-shift rates. The system automatically computes
+the total salary based on attendance and stitching data and stores finalized salary records for
+each month.
+Additionally, an Analytics and Report Dashboard provides visual insights through
+charts and tables, displaying monthly and yearly summaries of staff attendance, salary
+distribution, and stitching performance. Reports can also be downloaded for management
+review and recordkeeping.
+The proposed system is user
+</p>
+</body>
+</html>

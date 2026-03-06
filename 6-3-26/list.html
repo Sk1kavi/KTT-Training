@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul[type=circle]{
+            list-style-type: circle;
+            list-style-position:inside;
+            list-style-image:url("https://mdn.github.io/shared-assets/images/examples/star.png");
+        }
+        ul[type=square]{
+            list-style-type:none;
+            
+        }
+        ul[type=square] li{
+            background-image: url("https://mdn.github.io/shared-assets/images/examples/big-star.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 0 0;
+            padding-left:25px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Font properties are listed below</h1>
+        <ul type="circle">
+            <li>font-family</li>
+            <li>font-size</li>
+            <li>font-weight</li>
+            <li>font-style</li>
+            <li>font-stretch</li>
+        </ul>
+        <dl>
+            <dt>font-family</dt>
+            <dd>uses the avaiable font families</dd>
+            <dt>font-size</dt>
+            <dd>the size of the font is decided relatively to parent element when using em</dd>
+            <dd>the size is relative xheight of font used when used ex measuremengt</dd>
+            <dd>the size is relative to root element html for rem unit</dd>
+            <dt>font-weight</dt>
+            <dd>boldness of the font.</dd>
+            <dt>font-style</dt>
+            <dd>italic in cursive form.</dd>
+            <dd style="font-style: oblique 20deg">oblique slanting angle can be adjusted manually in degrees</dd>
+            <dt>font-stretch</dt>
+            <dd>condensed and expanded forms</dd>
+        </dl>
+        <h1>shorthand properties</h1>
+        <ol type="A">
+            <li>font
+            <ul type="disc">
+                <li>font-style</li>
+                <li>font-variant</li>
+                <li>font-weight</li>
+            </ul></li>
+            <li>background
+                <ul type="square">
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-position</li>
+                    <li>background-size</li>
+                    <li>background-repeat</li>
+                </ul> </li>
+            <li>border </li>
+            <li>margin </li>
+        </ol>
+    
+</body>
+</html>

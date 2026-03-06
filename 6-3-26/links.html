@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            @font-face {
+            font-family: 'Bitcount Prop Double Ink';
+            font-style: normal;
+            font-weight: 100 900;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/bitcountpropdoubleink/v2/Y4EeaqgqeCwyoeHYKJOMnRRAOHVHr-2bKnsgKOU1mvV-Vk5S_hxGNApRqvOsLjMS7TL7U6J7vsT0x86f1E_MhJ7Fc8CNp0DtWIOPIdLKGVtyw2WU1OmnzDEO5QVqngZewgsX32-qkruHpLpXeSB4hOOrFaY6I-9oLQWBuD4CtdBkkmqV6mdr8M41Shcr_DYnIqojkFlhekgcGiaIMOm7DafyoUk.woff2) format('woff2');
+            }
+
+            *{
+              font-family: 'Bitcount Prop Double Ink';
+         }
+            nav{
+                display:flex;
+                background-color:antiquewhite;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            a{
+                background-color: aqua;
+                color:black;
+                text-decoration: none;
+                margin:30px;
+                padding:10px;
+                text-transform: capitalize;
+            }
+            a:focus{
+                background-color: lightcoral;
+            }
+            a:hover{
+                padding: 20px;
+                font-size:20px;
+                background-color: lightgreen;
+            }
+            a:visited{
+                background-color:plum;
+            }
+            a[href*=list]{
+                order:10;
+            }
+            a[href*=text]{
+                order:8;
+            }
+            a[href*=text] + a[href*=link]{
+                order:3;
+            }
+             a[href*=font] + a[href*=link]{
+                order:9;
+            }
+             a[href*=align]{
+                order:4;
+            }
+             a[href*=back]{
+                order:7;
+            }
+             a[href*=write]{
+                order:2;
+            }
+             a[href*=box]{
+                order:6;
+            }
+             a[href*=color]{
+                order:1
+            }
+             a[href*=font]{
+                order:5;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="list.html">list</a>
+            <a href="text.html">text</a>
+            <a href="links.html"> button links</a>
+            <a href="../5-3-26/alignment.html">alignment</a>
+            <a href="../5-3-26/background.html">background</a>
+            <a href="../5-3-26/writingmode.html">writing mode</a>
+            <a href="../4-3-26/boxsizing.html">box sizing</a>
+            <a href="../4-3-26/color.html">color</a>
+            <a href="../font.html">font</a>
+            <a href="../links.html">links</a>
+        </nav>
+         </body>
+</html>

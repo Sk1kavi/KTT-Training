@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        
+        body{
+                font-family: "Betania Patmos";
+            }
+        .text1{
+            color:black;
+            background-color:lightblue;
+            display:inline;
+        }
+        .text2{
+            text-transform: capitalize;
+            text-shadow:1px 1px 1px red;
+            font-size: 50px;
+        }
+        .text3{
+            font-size:50px;
+            text-decoration: overline;
+             text-shadow: 2px 2px 0px red,
+                             0px 0px 10px blue;
+        }
+        .text3 + p{
+            color:chocolate;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .text3 + p::first-line{
+            word-spacing: 20px;
+            letter-spacing: 10px;
+        }
+        </style>
+</head>
+<body>
+    <p class="text1">sample text 1</p>
+    <p class="text2">sample text 2 </p>
+    <p class="text3">sample text 3 </p>
+    <p> Makes the text spread out, varying the gaps in between the words so that all lines of text are the same width. You need to use this carefully — it can look terrible, especially when applied to a paragraph with lots of long words in it. If you are going to use this, you should also think about using something else along with it, such as hyphens, to break some of the longer words across lines.</p>
+</body>
+</html>
