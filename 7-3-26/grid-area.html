@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            nav{
+                display:grid;
+                background-color:antiquewhite;
+                grid-template-columns: repeat(auto-fit, 1fr);
+                gap:15px;
+                grid-template-areas: 
+                "button button button button button"
+                "back write write color align"
+                "back box link list align"
+                "back  text . font  align"
+                "grid grid grid grid grid";
+                
+                
+            }
+            a{
+                display: grid;
+                place-items: center;
+                background-color: aqua;
+                color:black;
+                text-decoration: none;
+                text-transform: capitalize;
+                padding:20px;
+            }
+            a:focus{
+                background-color: lightcoral;
+            }
+            a:hover{
+                padding: 20px;
+                font-size:20px;
+                background-color: lightgreen;
+            }
+            a:visited{
+                background-color:plum;
+            }
+             a[href*=list]{
+                grid-area: list;
+            }
+            a[href*=text]{
+                grid-area: text;
+            }
+            a[href*=text] + a[href*=link]{
+                grid-area: button;
+            }
+             a[href*=font] + a[href*=link]{
+                grid-area: link;
+            }
+             a[href*=align]{
+                grid-area: align;
+            }
+             a[href*=back]{
+                grid-area: back;
+            }
+             a[href*=writing]{
+                grid-area: write;
+            }
+             a[href*=box]{
+                grid-area: box;
+            }
+             a[href*=color]{
+                grid-area: color;
+            }
+             a[href*=font]{
+                grid-area: font;
+            }
+            a[href*=grid]{
+                grid-area: grid;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="../6-3-26/list.html">list</a>
+            <a href="../6-3-26/text.html">text</a>
+            <a href="../6-3-26/links.html"> button links</a>
+            <a href="../5-3-26/alignment.html">alignment</a>
+            <a href="../5-3-26/background.html">background</a>
+            <a href="../5-3-26/writingmode.html">writing mode</a>
+            <a href="../4-3-26/boxsizing.html">box sizing</a>
+            <a href="../4-3-26/color.html">color</a>
+            <a href="../font.html">font</a>
+            <a href="../links.html">links</a>
+            <a href="grid.html">grid</a>
+        </nav>
+         </body>
+</html>
