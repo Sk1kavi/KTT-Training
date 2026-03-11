@@ -1,0 +1,77 @@
+body{
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a , p{
+    text-decoration:none;
+    opacity:0.7;
+    color: black;
+}
+header{
+    display:flex;
+    background-color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:100px;
+    padding-left:60px;
+    padding-right:20px;
+    margin-bottom: 30px;
+}
+.heading{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+nav{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+input + a{
+    background-color:orangered;
+    color:white;
+    align-self: center;
+    padding:10px;
+    border-radius: 6px;
+}
+.input + h1{
+    font-weight:bold;
+}
+.negative{
+    background-color: rgb(232, 59, 59);
+}
+.positive{
+    background-color: rgb(12, 166, 125);
+}
+.positive , .negative{
+    border-radius: 20px;
+}
+.anomaly img{
+    float:left;
+    padding:10px;
+}
+.anomaly{
+    background-color: white;
+    padding-bottom:80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width:400px;
+    height:250px;
+    border-radius: 20px;
+}
+input[type=search]{
+    appearance: none;
+    border-radius: 5px;
+    padding:10px;
+    background-image: url("search.png");
+    background-size: 20px 15px;
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    background-position: 20px;
+    border-color:whitesmoke;
+    border-style:solid;
+}
+.request{
+    background-color: white;
+}
