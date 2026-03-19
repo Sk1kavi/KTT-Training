@@ -2,12 +2,17 @@ body{
     background-color:whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
-a , p{
+#main{
+    margin-left:100px;
+     margin-right:100px;
+}
+nav > a , p{
     text-decoration:none;
     opacity:0.7;
     color: black;
 }
 header{
+    margin:0px;
     display:flex;
     background-color: white;
     flex-wrap: wrap;
@@ -38,25 +43,32 @@ input + a{
     font-weight:bold;
 }
 .negative{
-    background-color: rgb(232, 59, 59);
+    background-color: rgba(232, 59, 59,0.1);
+
 }
 .positive{
-    background-color: rgb(12, 166, 125);
+    background-color: rgba(12, 166, 125,0.1);
 }
 .positive , .negative{
     border-radius: 20px;
+    display:flex;
+    padding:10px;
+    padding-right:20px;
+    margin-top: 35px;
 }
 .anomaly img{
     float:left;
     padding:10px;
+    margin-top: 10px;
+    margin-right:10px;
 }
 .anomaly{
     background-color: white;
-    padding-bottom:80px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-bottom:150px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 10px;
-    width:400px;
+    width:50%;
     height:250px;
     border-radius: 20px;
 }
@@ -72,6 +84,190 @@ input[type=search]{
     border-color:whitesmoke;
     border-style:solid;
 }
-.request{
+input[type=button]{
+    font-weight: bold;
+    background-color:rgba(202, 202, 244,0.5);
+    background-image: url("left-arrow.png");
+    background-size: 15px 15px;
+    background-position: 20px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+    height:40px;
+    width:250px;
+    align-self: flex-end;
+    margin-left:565px;
+}
+.first{
+    display:flex;
+    margin-bottom: 30px;
+
+}
+.second{
+    display:flex;
+    gap:50px;
+    margin-bottom: 30px;
+}
+.second > div{
     background-color: white;
+     border-radius: 20px;
+    padding:20px;
+}
+.title > h3{
+    color:orangered;
+}
+.progress{
+    border-radius: 20px;
+    width:250px;
+    height:8px;
+    margin-top: 20px;
+} 
+[id="1"]{
+    background-image: linear-gradient(to right, orangered 75% , whitesmoke 25%);
+}
+[id="2"]{
+    background-image: linear-gradient(to right, orange 45% , whitesmoke 55%);
+}
+[id="3"]{
+    background-image: linear-gradient(to right, red 90% , whitesmoke 10%);
+}
+[id="4"]{
+    background-image: linear-gradient(to left,  whitesmoke 90% , green 10% );
+}
+.second h1{
+    display:inline;
+}
+.second img{
+    padding-left:10px;
+}
+.second h4{
+    display:inline;
+}
+[src="trending.png"] + h4{
+    color:red;
+}
+[src="trend.png"] + h4{
+        color:limegreen;
+}
+
+.third{
+    display:flex;
+    gap:50px;
+    margin-bottom: 30px;
+}
+.latency , .code{
+    background-color: white;
+    border-radius: 25px;
+    padding-left:20px;
+        height: 400px;
+}
+.latency{
+    width:70%;
+    display:flex;
+}
+.code{
+    width:30%;
+}
+.lat{
+    margin-left:250px;
+}
+.lat p{
+    display:inline-block;
+    margin-top: 40px;
+}
+.lat > span{
+    display:inline-block;
+    vertical-align: middle;
+}
+.status{
+    display:flex;
+    flex-direction: column;
+    row-gap: 0;
+}
+.ok ,.four,.five{
+    display:flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.distribution{
+    width:50%;
+    height:250px;
+    background-color: white;
+    padding-bottom:150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.distribution{
+    display:flex;
+}
+.distribution p{
+    margin-left:200px;
+    margin-top: 15px;
+    background-color: rgb(216, 249, 249);
+    height:20px;
+    padding:12px;    
+    border-radius: 10px;
+}
+.fourth{
+    display:flex;
+    gap:50px;
+}
+a{
+    text-decoration: none;
+    color:orange;
+    font-weight: bold;
+}
+.fifth{
+    margin-top:30px;
+    background-color: white;
+    border-radius: 25px;
+     border-color:azure;
+    border-style:solid;
+}
+th,tfoot{
+    background-color:whitesmoke;
+}
+.get{
+    color:blue;
+    background-color: rgba(86, 193, 229,0.4);
+    width:40px;
+    border-radius: 2px;
+    padding: 5px;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+    table-layout: fixed;
+}
+pre{
+    font-size: 20px;
+}
+.right-align{
+    text-align: right;
+    padding-right:20px;
+}
+.left-align{
+    text-align: left;
+    padding-left:20px;
+}
+table{
+    text-align: center;
+}
+tr{
+    border-color:whitesmoke;
+    border-style:solid;
+}
+.align{
+display:flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    margin-top:30px;
+    text-align:center;
+    border-top-color:white;
+    border-top-style:solid;
+    padding:20px;
 }

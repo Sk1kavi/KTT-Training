@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
+
 <header>
     <div class="heading">
     <img src="asset.png" width="20" height="15">
@@ -21,27 +22,155 @@
     <a href="#"> Profile</a>
     <img src="i2.jpeg" width="50" >
 </header>
-<div class="title">
-    <h1>/api/v2/reports/heavy-asset-logs</h1>
-    <p>Real-time performance metrics and detailed request auditing</p>
-</div>
-<div class="anomaly">
-    <h2>Anomalies & Insights</h2>
-    <div class="negative">
-        <img src="danger.avif" width="20" height="15">
-        <div><h3>Latent Spikes Detected</h3>
-        <p> A 40% increase in P99 latency was observed between 03:00-04:15 UTC.Correlates with DB backup tasks</p>
-    </div>
-    </div>
-    <div class="positive">
-    <img src="tick.jpg" width="20" height="15">
-    <div><h3>Optimization Successful</h3>
-    <p>New caching headers have reduced average body size by 22% since 12 hours ago</p>
-    </div>
-    </div>
-<div class="request">
 
-</div>
-</div>
+<main id="main">
+    <div class="first">
+        <div class="title">
+            <h3>API ENDPOINT ANALYSIS</h3>
+            <h1>/api/v2/reports/heavy-asset-logs</h1>
+            <p>Real-time performance metrics and detailed request auditing</p>
+        </div>
+        <input type="button" value="Back to Dashboard">
+    </div>
+    <div class="second">
+        <div class="request">
+            <p>TOTAL REQUESTS</p>
+            <h1>1.2M</h1>
+            <img src="trend.png" width="15" height="15">
+            <h4>12%</h4>
+            <div class="progress" id="1"></div>
+        </div>
+        <div class="avg">
+            <p>AVG LATENCY (P50)</p>
+            <h1>145ms</h1>
+            <img src="trending.png" width="15" height="15">
+            <h4>5%</h4>
+            <div class="progress" id="2"></div>
+        </div>
+        <div class="tail">
+            <p>TAIL LATENCY (P99)</p>
+            <h1>890ms</h1>
+            <img src="trend.png" width="15" height="15">
+            <h4>2%</h4>
+            <div class="progress" id="3"></div>
+        </div>
+        <div class="error">
+            <p>ERROR RATE</p>
+            <h1>0.04%</h1>
+            <img src="trending.png" width="15" height="15">
+            <h4>0.01%</h4>
+            <div class="progress" id="4"></div>
+        </div>
+    </div>
+    <div class="third">
+        <div class="latency">
+            <div>
+                <h2>Latency vs. Throughput</h2> 
+                <p>Performance correlation over the last 24 hours</p>
+            </div>
+           <div class="lat">
+                <span style="font-size:50px;color:orangered">&bull;</span>
+                <p>Latency</p>
+                <span style="font-size:50px;color:darkgrey">&bull;</span>
+                <p>Throughput</p>
+           </div>
+        </div>
+        <div class="code">
+            <h2>Status Code Distribution</h2>
+             <div class="status">
+               <div class="ok">
+                    <span style="font-size:50px;color:green">&bull;</span>
+                    <h5>200 OK</h5>
+                </div>
+                <div class="four">
+                    <span style="font-size:50px;color:orangered">&bull;</span>
+                    <h5>4xx Errors</h5>
+                </div>
+                <div class="five">
+                    <span style="font-size:50px;color:red">&bull;</span>
+                    <h5>5xx Errors</h5>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="fourth">
+        <div class="distribution">
+            <h2>Latency Distribution</h2>
+            <p id="scale">LOG SCALE</p>
+        </div>
+        <div class="anomaly">
+            <h2>Anomalies & Insights</h2>
+
+            <div class="negative">
+                <img src="danger.jpg" width="25" height="25">
+                <p><span style="font-weight:bold;font-size: 20px;" >Latent Spikes Detected </span><br>
+                A 40% increase in P99 latency was observed between 03:00-04:15 UTC.Correlates with DB backup tasks</p>
+            </div>
+
+            <div class="positive">
+                <img src="tick.jpg" width="25" height="25">
+                <p><span style="font-weight:bold;font-size: 20px;" >Optimization Successful</span><br>
+                New caching headers have reduced average body size by 22% since 12 hours ago</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fifth">
+        
+        <table>
+            <thead>
+                <tr>
+                <td class="left-align" colspan="4"><h2>Recent Request Logs</h2></td>
+                <td class="right-align"><a>Export CSV</a></td>
+                </tr>
+            </thead>
+            <tr>
+                <th class="left-align"><p>DATE/TIME</p></th>
+                <th><p>METHOD</p></th>
+                <th><p>LATENCY</p></th>
+                <th><p>STATUS</p></th>
+                <th class="right-align"><p>ACTION</p></th>
+            </tr>
+            <tr>
+                <td class="left-align"><p>2023-10-24 14:22:01</p></td>
+                <td class="align"><h4 class="get">GET</h4></td>
+                <td>142ms</td>
+                <td><span style="font-weight:bold;color:limegreen">&bull; 200</span></td>
+                <td class="right-align"><a href="#">View Details</a></td>
+            </tr>
+            <tr>
+                <td class="left-align"><p>2023-10-24 14:21:58</p></td>
+                <td class="align"><h4 class="get">GET</h4></td>
+                <td>1250ms</td>
+                <td><span style="font-weight:bold;color:red">&bull; 504</span></td>
+                <td class="right-align"><a href="#">View Details</a></td>
+            </tr>
+            <tr>
+                <td class="left-align"><p>2023-10-24 14:21:45</p></td>
+                <td class="align"><h4 class="get">GET</h4></td>
+                <td>92ms</td>
+                <td><span style="font-weight:bold;color:limegreen">&bull; 200</span></td>
+                <td class="right-align"><a href="#">View Details</a></td>
+            </tr>
+            <tr>
+                <td class="left-align"><p>2023-10-24 14:20:12</p></td>
+                <td class="align"><h4 class="get">GET</h4></td>
+                <td>210ms</td>
+                <td><span style="font-weight:bold;color:orange">&bull; 403</span></td>
+                <td class="right-align"><a href="#">View Details</a></td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td class="left-align" colspan="4"><p><span style="font-weight: bold;">SHOWING 4 OF 24500 LOGS</span></p></td>
+                    <td class="right-align"><pre><     ></pre></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</main>
+<footer>
+    <p>&copy; 2023 Billione Asset Tracker &bull; Privacy Policy &bull; System Status : <span style="color:darkgreen">Normal</span></p>
+</footer>
 </body>
 </html>
