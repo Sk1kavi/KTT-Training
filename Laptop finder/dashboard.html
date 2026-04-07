@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="laptops.js"></script>
+</head>
+<body>
+    <marquee><h1 id="heading">Laptop Finder</h1></marquee>
+    <main id="main">
+        <div class="filter">
+            <div class="price">
+                <h3>Price</h3>
+                <input type="checkbox" name="price" value="20000-40000" id="price1">
+                <label for="price1">₹20,000 - ₹40,000</label><br>
+                <input type="checkbox" name="price" value="40000-90000" id="price2">
+                <label for="price2">₹40,000 - ₹90,000</label><br>
+                <input type="checkbox" name="price" value="90000-200000" id="price3">
+                <label for="price3">₹90,000 - ₹200,000</label><br>                
+            </div>
+            <div class="ram">
+                <h3>RAM</h3>
+                <input type="checkbox" name="ram" value="8-16" id="ram1">
+                <label for="ram1">8GB - 16GB</label><br>
+                <input type="checkbox" name="ram" value="16-32" id="ram2">
+                <label for="ram2">16GB - 32GB</label><br>
+                <input type="checkbox" name="ram" value="32-64" id="ram3">
+                <label for="ram3">32GB - 64GB</label><br>
+            </div>
+            <div class="battery">
+                <h3>Battery Life</h3>
+                <input type="checkbox" name="battery" value="2" id="battery1">
+                <label for="battery1">2 hours</label><br>
+                <input type="checkbox" name="battery" value="3" id="battery2">
+                <label for="battery2">3 hours</label><br>
+                <input type="checkbox" name="battery" value="6" id="battery3">
+                <label for="battery3">6 hours</label><br>
+                <input type="checkbox" name="battery" value="7" id="battery4">
+                <label for="battery4">7 hours</label><br>
+                <input type="checkbox" name="battery" value="10" id="battery5">
+                <label for="battery5">10 hours</label><br>
+            </div>
+            <div class="brand">
+                <h3>Laptop Brand</h3>
+                <input type="checkbox" name="brand" value="hp" id="hp">
+                <label for="hp">HP</label><br>
+                <input type="checkbox" name="brand" value="dell" id="dell">
+                <label for="dell">Dell</label><br>
+                <input type="checkbox" name="brand" value="lenovo" id="lenovo">
+                <label for="lenovo">Lenovo</label><br>
+                <input type="checkbox" name="brand" value="acer" id="acer">
+                <label for="acer">Acer</label><br>
+            </div>
+            <div class="processor">
+                <h3>Processor</h3>
+                <input type="checkbox" name="processor" value="intel" id="inteli">
+                <label for="inteli">Intel</label><br>
+                <input type="checkbox" name="processor" value="ryzen" id="ryzen">
+                <label for="ryzen">AMD Ryzen</label><br>
+                <input type="checkbox" name="processor" value="athlon" id="athlon">
+                <label for="athlon">AMD Athlon</label><br>
+            </div>
+            <div class="storage">
+                <h3>SSD Storage</h3>
+                <input type="checkbox" name="storage" value="128" id="storage1">
+                <label for="storage1">128GB</label><br>
+                <input type="checkbox" name="storage" value="256" id="storage2">
+                <label for="storage2">256GB</label><br>
+                <input type="checkbox" name="storage" value="512" id="storage3">
+                <label for="storage3">512GB</label><br>
+                <input type="checkbox" name="storage" value="1024" id="storage4">
+                <label for="storage4">1TB</label><br>
+            </div>
+            <div class="graphics">
+                <h3>Graphics card Brand</h3>
+                <input type="checkbox" name="graphics" value="nvidia" id="nvidia">
+                <label for="nvidia">NVIDIA</label><br>
+                <input type="checkbox" name="graphics" value="amd" id="amd">
+                <label for="amd">AMD Radeon</label><br>
+                <input type="checkbox" name="graphics" value="intel" id="intel">
+                <label for="intel">Intel</label><br>
+            </div>
+            <div class="os">
+                <h3>Operating System</h3>
+                <input type="checkbox" name="os" value="windows" id="windows">
+                <label for="windows">Windows</label><br>
+                <input type="checkbox" name="os" value="mac" id="mac">
+                <label for="mac">macOS</label><br>
+            </div>
+            <div class="rating">
+                <h3>Customer Rating</h3>
+                <input type="checkbox" name="rating" value="4-5" id="rating1">
+                <label for="rating1">4 - 5 Stars</label><br>
+                <input type="checkbox" name="rating" value="3-4" id="rating2">
+                <label for="rating2">3 - 4 Stars</label><br>
+                <input type="checkbox" name="rating" value="2-3" id="rating3">
+                <label for="rating3">2 - 3 Stars</label><br>
+                <input type="checkbox" name="rating" value="1-2" id="rating4">
+                <label for="rating4">1 - 2 Stars</label><br>
+            </div>
+            <div class="features">
+                <h3>Features</h3>
+                <input type="checkbox" name="features" value="fingerprint" id="fingerprint">
+                <label for="fingerprint">Fingerprint</label><br>
+                <input type="checkbox" name="features" value="touch" id="touch">
+                <label for="touch">Touch Screen</label><br>
+                <input type="checkbox" name="features" value="faceUnlock" id="faceUnlock">
+                <label for="faceUnlock">Facial Recognition</label><br>
+            </div>
+            <div class="status">
+                <h3>Market Status</h3>
+                <input type="checkbox" name="status" value="available" id="available">
+                <label for="available">Available</label><br>
+                <input type="checkbox" name="status" value="out of stock" id="outOfStock">
+                <label for="outOfStock">Out of Stock</label><br>
+                <input type="checkbox" name="status" value="upcoming" id="upcoming">
+                <label for="upcoming">Upcoming</label><br>
+            </div>
+            <div class="color">
+                <h3>Color</h3>
+                <input type="checkbox" name="color" value="black" id="black">
+                <label for="black">Black</label><br>
+                <input type="checkbox" name="color" value="grey" id="grey">
+                <label for="grey">Grey</label><br>
+                <input type="checkbox" name="color" value="silver" id="silver">
+                <label for="silver">Silver</label><br>
+            </div>
+            <div class="screen">
+                <h3>Screen Size</h3>
+                <input type="checkbox" name="screen" value="11-13" id="screen1">
+                <label for="screen1">11 - 13 inches</label><br>
+                <input type="checkbox" name="screen" value="14-15" id="screen2">
+                <label for="screen2">14 - 15inches</label><br>
+                <input type="checkbox" name="screen" value="16-18" id="screen3">
+                <label for="screen3">16 - 18 inches</label><br>
+            </div>
+        </div>
+        <div class="laptops">
+
+        </div>
+    </main>
+        <script src="script.js"></script>
+
+</body>
+</html>
