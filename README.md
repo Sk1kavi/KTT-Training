@@ -9,3 +9,7 @@ https://docs.google.com/document/d/1YJ_Tcv9YDUVMj_qgOwMwPssDVzYBgRTXzePe8gqeRoQ/
 
 Javascript notes document link:
 https://docs.google.com/document/d/1aHsaXORa7fieoui1avYow64IcpbarQl-Zxng813xky0/edit?usp=sharing
+
+
+Google Sheet Topics covered list link :
+https://docs.google.com/spreadsheets/d/1UjB_7bkIGZRyRz7DJkFFkBjGtfr5P9n9_neK14FVlns/edit?usp=sharing
