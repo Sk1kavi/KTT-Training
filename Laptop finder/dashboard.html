@@ -8,9 +8,17 @@
     <script src="laptops.js"></script>
 </head>
 <body>
-    <marquee><h1 id="heading">Laptop Finder</h1></marquee>
-    <main id="main">
+    <div class="top-bar">
+        <marquee><h1 id="heading">Laptop Finder</h1></marquee>
+        <div class="filter-choice">
+
+        </div>
+    </div>
+    <form id="main">
         <div class="filter">
+            <div class="button-reset">
+                <button type="reset" name="reset">Reset All</button>
+            </div>
             <div class="price">
                 <h3>Price</h3>
                 <input type="checkbox" name="price" value="20000-40000" id="price1">
@@ -140,7 +148,7 @@
         <div class="laptops">
 
         </div>
-    </main>
+    </form>
         <script src="script.js"></script>
 
 </body>

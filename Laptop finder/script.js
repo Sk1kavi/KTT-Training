@@ -3,7 +3,7 @@ function displayLaptops(laptops) {
     container.innerHTML = "";
     laptops.forEach(laptop => {
         const card=`<div class="laptop-card">
-        <img src="${laptop.image}" alt="${laptop.name}" width="200" height="150">
+        <img src="${laptop.image}" alt="${laptop.name}">
         <h3>${laptop.name} Laptop</h3>
         <p>Price: ₹${laptop.price}</p>
         <p>RAM: ${laptop.ram} GB</p>
@@ -114,5 +114,40 @@ function applyFilters() {
        }
         return true;
     })
+    const filters = {
+        Price: selectedPrice,
+        RAM: selectedRam,
+        Battery: selectedBattery,
+        Brand: selectedBrand,
+        Processor: selectedProcessor,
+        Screen: selectedScreen,
+        Storage: selectedStorage,
+        Status: selectedStatus,
+        Graphics: selectedGraphics,
+        OS: selectedOs,
+        Rating: selectedRating,
+        Features: selectedFeatures,
+        Color: selectedColor
+    };
+    displayFilters(filters);
     displayLaptops(filteredLaptops);
 }
+
+function displayFilters(filters){
+        const container=document.querySelector('.filter-choice');
+        container.innerHTML="";
+        for (let title in filters){
+            const values=filters[title];
+            if(values.length>0){
+                const card=`<div class="filter-card">
+                <strong>${title}</strong>
+                <p>${values.join(",")}</p>
+                </div>`
+                container.innerHTML+=card;
+            }
+        }
+}
+
+document.getElementById("main").addEventListener("reset", function () {
+    setTimeout(applyFilters,0);
+});
